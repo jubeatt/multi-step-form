@@ -109,7 +109,7 @@ export default function MultiStepForm() {
         </div>
       </div>
 
-      <div className='px-4 pb-24 -mt-[72px] md:m-auto md:flex md:bg-white md:rounded-md md:gap-5 md:p-4 lg:w-[1024px] '>
+      <div className='w-full px-4 pb-24 -mt-[72px] md:m-auto md:flex md:bg-white md:rounded-md md:gap-5 md:p-4 lg:w-[1024px]'>
         <div className='hidden md:shrink-0 md:block md:bg-sidebar-desktop md:bg-cover md:bg-no-repeat md:w-[274px] md:h-[568px] md:rounded-md'>
           <ol className='p-8'>
             {steps.map((stepName, index) => {
