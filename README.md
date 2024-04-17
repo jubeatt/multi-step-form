@@ -31,7 +31,7 @@
 ## 連結
 
 - Live Site 連結: [https://multi-step-form-mu-five.vercel.app/](https://multi-step-form-mu-five.vercel.app/)
-- Solution 連結: [Add solution URL here](https://your-solution-url.com)
+- Solution 連結: [https://www.frontendmentor.io/solutions/multi-step-form-using-nextjs-tailwind-typescript-mobile-first-EtZcJWzGiu](https://www.frontendmentor.io/solutions/multi-step-form-using-nextjs-tailwind-typescript-mobile-first-EtZcJWzGiu)
 
 ## 使用工具
 
