@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang='en'>
       <Head />
       <title>Multi Step Form</title>
-      <body>
+      <body className='bg-magnolia'>
         <Main />
         <NextScript />
       </body>
