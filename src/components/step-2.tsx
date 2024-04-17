@@ -59,12 +59,16 @@ const Step2: FC<Props> = ({ name, type, onPlanChange, onSwitch }) => {
           ))}
         </div>
         <div className='p-3 flex justify-center items-center bg-alabaster rounded-md md:mt-8'>
-          <span className='font-medium lg:text-lg'>Monthly</span>
+          <span className={`font-medium lg:text-lg ${clsx({ 'text-cool-gray': type === PlanType.Yearly })}`}>
+            Monthly
+          </span>
           <Switch
             active={type === PlanType.Yearly}
             onClick={onSwitch}
           />
-          <span className='text-cool-gray font-medium lg:text-lg'>Yearly</span>
+          <span className={` font-medium lg:text-lg ${clsx({ 'text-cool-gray': type === PlanType.Monthly })}`}>
+            Yearly
+          </span>
         </div>
       </form>
     </StepWrapper>
