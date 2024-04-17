@@ -167,7 +167,7 @@ export default function MultiStepForm() {
           {isFinishStep && <Step5 />}
 
           {!isFinishStep && (
-            <div className='hidden mt-auto p-4 justify-between md:flex lg:px-16'>
+            <div className='fixed bottom-0 left-0 p-4 bg-white w-full flex justify-between md:static md:mt-auto lg:px-16'>
               {!isFirstStep && (
                 <Button
                   variant='ghost'
@@ -192,31 +192,6 @@ export default function MultiStepForm() {
           )}
         </div>
       </div>
-
-      {!isFinishStep && (
-        <div className='fixed bottom-0 left-0 p-4 bg-white w-full flex justify-between md:hidden'>
-          {!isFirstStep && (
-            <Button
-              variant='ghost'
-              onClick={handlePreviousStep}
-            >
-              Go back
-            </Button>
-          )}
-          {isConfirmStep ? (
-            <Button
-              variant='secondary'
-              onClick={handleNextStep}
-            >
-              Confirm
-            </Button>
-          ) : (
-            <div className='ml-auto'>
-              <Button onClick={handleNextStep}>Next Step</Button>
-            </div>
-          )}
-        </div>
-      )}
     </section>
   )
 }
