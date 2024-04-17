@@ -59,7 +59,7 @@
 
 ### Tailwind - 怎麼設定 background-image
 
-之前在用 Tailwind 的時候剛好都沒有碰過要設定背景圖片的屬性，所以當時就小愣了一下並在內心 OS 了一下：「啊，這也能用 utility class 來設定嗎？有這麼簡單嗎？」
+之前在用 Tailwind 的時候剛好都沒有碰過要設定背景圖片的屬性，所以當時就小愣了一下並在內心 OS：「啊，這也能用 utility class 來設定嗎？有這麼簡單嗎？」
 
 答案是肯定的。
 
@@ -130,7 +130,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 }
 ```
 
-如果你沒有什麼特殊需求的話基本上就這樣而已，非常的簡單又樸實無華對吧！所以詳細說明就留給[官方文件](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts#google-fonts)。
+如果你沒有什麼特殊需求的話基本上就這樣而已，非常的簡單又樸實無華對吧！所以詳細說明就留給[官方文件](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts#google-fonts)囉。
 
 ### Next.js - 共通的 Layout 可以怎麼設定
 
@@ -179,6 +179,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
 - 不用想 class 名字（其實我沒有取名障礙，但有發現名字取得不好的話後面會有點誤導，而且要再回頭改的話很麻煩）
 - 想要什麼就直接寫，例如最常用的 margin、padding，不用在到對應的 class 去寫
-- RWD 寫起來比較快，直接用 `:md :lg` 來添加就好，也可以直接從那個標籤身上看到原本有下哪些屬性，這方便我自己覺得傳統的 media query 更加一目瞭然
+- RWD 寫起來比較快，直接用 `:md :lg` 來添加就好，也可以直接從那個標籤身上看到原本有下哪些屬性，我自己覺得比傳統的 media query 更加一目瞭然
 
 但一長條的 class 名稱會看到眼花這一點確實是不可否認的，只能說還是要看自己取捨看看值不值得囉。
