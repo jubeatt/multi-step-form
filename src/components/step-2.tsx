@@ -33,7 +33,7 @@ const Step2: FC<Props> = ({ name, type, onPlanChange, onSwitch }) => {
               >
                 <Image
                   className='mr-4 md:mr-0 md:mb-14'
-                  src={`/icon-${plan.label}.svg`}
+                  src={`/icon-${plan.value}.svg`}
                   alt={plan.label}
                   width={42}
                   height={42}
