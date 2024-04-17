@@ -20,7 +20,7 @@ const Step1: FC<Props> = ({ showValidation, onChange, ...props }) => {
     >
       <form>
         {formFields.map((field) => {
-          const invalid = !Boolean(props[field.key])
+          const invalid = !Boolean(props[field.key].trim())
           return (
             <div
               className='mb-4'
